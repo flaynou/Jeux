@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/custom-style.css">
+    <script src="script/script.js" defer></script>
+
+    <title>Défi HTML : trouve la bonne balise</title>
+</head>
+
+<body>
+
+    <main id="htmlQuizGame">
+
+        <!-- =====================================================
+             EN-TÊTE
+        ====================================================== -->
+
+        <header class="game-header">
+            <div>
+                <p class="game-category">Mini-défi HTML</p>
+                <h1>Défi HTML : trouve la bonne balise</h1>
+                <p class="game-description">Lis la situation et choisis la bonne balise HTML.</p>
+            </div>
+            <div class="score" aria-label="Score">
+                <span>
+                    Score
+                </span>
+                <strong id="score">0</strong>
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             PROGRESSION
+        ====================================================== -->
+
+        <div class="progress" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+
+        <!-- =====================================================
+             QUESTION
+        ====================================================== -->
+
+        <section id="quiz" class="question-card" aria-labelledby="questionTitle">
+
+            <div class="situation-title">
+                Situation
+            </div>
+
+            <p id="scenarioText" class="situation"></p>
+
+
+            <!-- Aperçu du contenu -->
+
+            <div id="preview" class="preview"></div>
+
+
+            <!-- Question -->
+
+            <p id="questionTitle" class="question"></p>
+
+
+            <!-- Réponses -->
+
+            <div id="answers" class="answers"></div>
+
+
+            <!-- Feedback -->
+
+            <div id="feedback" class="feedback" aria-live="polite"></div>
+
+
+            <!-- Bouton suivant -->
+
+            <div class="actions">
+
+                <button id="nextButton" class="next-button" type="button">
+                    Question suivante →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ÉCRAN FINAL
+        ====================================================== -->
+
+        <section id="finalScreen" class="final-screen" aria-live="polite">
+
+            <p class="game-category">
+                Défi terminé
+            </p>
+
+            <h2>
+                Bravo !
+            </h2>
+
+            <div id="finalScore" class="final-score"></div>
+
+            <p id="finalMessage"></p>
+
+            <button id="restartButton" class="restart-button" type="button">
+                Recommencer
+            </button>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
